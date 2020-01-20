@@ -14,8 +14,8 @@ In this challenge, you will write a Python script that performs all three ETL st
 
 Documented Assumptions:
 
-1.
-2.
-3.
-4.
-5.
+1. The data provided will always be in the correct file format like .json or .csv. If the data provided is not in that format the ETL pipeline will break.
+2. The spelling of columns names will remain consistent. Columns will not be removed from the datasets.
+3. The formatting of dollar amounts, dates, times, or other numbers will not change as this could break our regex expressions.
+4. The sql database tables will not be dropped by anyone else and the data will always be deleted and replaced instead of appended to exisiting data.
+5. Things like removing adult movies, not including TV shows, and removing rows based on conditions are all built into the function specifically so they can't change their mind later without refactoring the function.
